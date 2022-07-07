@@ -8,6 +8,12 @@ import Nav from "./Nav";
 import NotFound from "./NotFound";
 
 class App extends Component {
+  const Error=()=>{
+    return(
+      <h1>No match</h1>
+    )
+  }
+    
   render() {
     return (
       <BrowserRouter>
@@ -16,7 +22,7 @@ class App extends Component {
           <Switch>
             <Route path="/" component={Home} exact />
             <Route path="/about" component={About} />
-            <Route component={NotFound} />
+            <Route component={Error} />
           </Switch>
         </div>
       </BrowserRouter>
