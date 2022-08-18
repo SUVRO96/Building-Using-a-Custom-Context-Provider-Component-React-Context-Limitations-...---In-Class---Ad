@@ -4,16 +4,17 @@ import { BrowserRouter, Route } from "react-router-dom";
 import "../styles/App.css";
 import About from "./About";
 import Home from "./Home";
+import LocationDisplay from "./LocationDisplay";
 import Nav from "./Nav";
 import NotFound from "./NotFound";
 
 class App extends Component {
-    
   render() {
     return (
       <BrowserRouter>
         <div id="main">
           <Nav />
+          <LocationDisplay />
           <Switch>
             <Route path="/" component={Home} exact />
             <Route path="/about" component={About} />
