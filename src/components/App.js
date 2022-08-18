@@ -14,7 +14,7 @@ class App extends Component {
       <BrowserRouter>
         <div id="main">
           <Nav />
-          <LocationDisplay />
+          <LocationDisplay data-testid="location-display" />
           <Switch>
             <Route path="/" component={Home} exact />
             <Route path="/about" component={About} />
